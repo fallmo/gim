@@ -10,7 +10,6 @@ const { getCached, redisClient } = require("./utils/redis.js");
 const Link = require("./models/Link.js");
 
 async function main() {
-  process.exit(1);
   checkEnvironment();
   await connectDatabase();
   await redisClient.connected;
